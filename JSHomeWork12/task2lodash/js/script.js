@@ -1,7 +1,7 @@
 $(function(){
     var html = $('#profile').html();
     var data = {
-        name : 'Грахов Сергей',
+        name : 'Вовк Анастасия',
         photo: {
             src: 'img/Photo3.jpg',
             alt: 'My photo',
