@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jCarousel  Select Checkbox</title>
+	<link rel="stylesheet" href="css/uniform.aristo.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.uniform.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.carousel.select.js"></script>
+</head>
+<body>
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul class="jcarousel-list">
+				<li><img src="img/slider-picture1.png"alt="lady pigeons"></li>
+				<li><img src="img/slider-picture2.png"alt="lady pigeons 2"></li>
+				<li><img src="img/slider-picture3.png"alt="Evening sea and Maya"></li>
+				<li><img src="img/slider-picture4.png"alt="Summer sunset over the sea"></li>
+				<li><img src="img/slider-picture5.png"alt="Young naturalist"></li>
+				<li><img src="img/slider-picture6.png"alt="Black Sea beach"></li>
+				<li><img src="img/slider-picture7.png"alt="Under the rainbow"></li>
+				<li><img src="img/slider-picture8.png"alt="Prairie Crimea"></li>
+			</ul>
+		</div>
+		<a href="#" class="jcarousel-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-next">&rsaquo;</a>
+		<form action="#" method="post">
+        <div class="select-box">
+            <select name="rest" id="rest">
+                <option value="place" selected>Место отдыха</option>
+                <option value="beach">Море</option>
+                <option value="forest">Лес</option>
+                <option value="mountain">Горы</option>
+                <option value="river">У реки</option>
+                <option value="village">Домик в деревне</option>
+            </select>
+        </div>
+
+        <div class="query-checkbox">
+            <h4>jQuery-checkbox</h4>
+            <div>
+                <label for="jch1">label 1</label>
+                <input type="checkbox" class="niceCheck" id="jch1" tabindex="1" />
+            </div>
+            <div>
+                <label for="jch2">label 2</label>
+                <input type="checkbox" class="niceCheck" checked="checked" id="jch2" tabindex="2" value="2" />
+            </div>
+            <div>
+                <label for="jch3">label 3</label>
+                <input type="checkbox" class="niceCheck" id="jch3" checked="checked" disabled="disabled" />
+            </div>
+        </div>
+
+        <div class="css-checkbox">
+            <h4>css-checkbox</h4>
+            <div>
+                <input type="checkbox" id="cch1" tabindex="1" class="cch">
+                <label class="cch-text" for="cch1">label 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cch2" tabindex="2" checked="checked" class="cch">
+                <label class="cch-text" for="cch2">label 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cch3" tabindex="3" checked="checked" disabled="disabled" class="cch">
+                <label class="cch-text" for="cch3">label 3</label>
+            </div>
+        </div>
+    </form>
+	</div>
+</body>
+</html>
