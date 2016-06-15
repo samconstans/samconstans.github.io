@@ -1,0 +1,608 @@
+@import 'variables';
+@import 'fonts';
+
+//**wrapper
+header {
+  background: $color1;
+  background-size: cover;
+  height: 112px;
+}
+
+.wrapper {
+  width: 1161px;
+  margin: 0 auto;
+}
+
+.logo {
+  float:left;
+  margin-top: 36px;
+}
+
+.networks {
+  float: right;
+  margin-top: 48px;
+}
+
+.networks__list {
+  list-style: none;
+}
+
+.list--item {
+  float: left;
+}
+
+.list--link {
+  width: 24px;
+  height: 20px;
+  display: block;
+  background: url('../img/sprite1.png') no-repeat;
+  background-position-y: 0;
+}
+
+.list--link:hover {
+  background-position-y: -20px;
+}
+
+.fb {
+  background-position-x: 0;
+}
+
+.tw {
+  background-position-x: -28px;
+}
+
+.rss {
+  background-position-x: -60px;
+}
+
+.lin {
+  background-position-x: -92px;
+}
+
+.sk {
+  background-position-x: -126px;
+}
+//**
+
+//**navigation
+.nav__wrapper {
+  height: 56px;
+  background: $color2;
+}
+
+.nav {
+  float:left;
+  list-style: none;
+}
+
+.nav--item {
+  float: left;
+  padding: 20px 40px;
+  border-right: 1px solid $color3;
+}
+
+.nav--item:hover {
+  background: $color4;
+}
+
+.nav--link:hover {
+  color: $color7;
+}
+
+.nav--link {
+  color: $color1;
+  font-family: "Ubuntu Condensed";
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__search {
+  float: right;
+  height: 56px;
+  padding: 8px;
+}
+
+.search {
+  width: 241px;
+  height: 40px;
+  display: block;
+  background: $color5;
+  border-color: $color6;
+  color: $color1;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.nav__search::after {
+  content: url("../img/search.png");
+  position: relative;
+  top: -26px;
+  left: 210px;
+}
+//*
+
+//**carousel
+.carousel {
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.carousel__items {
+  width: 10000px;
+  position: relative;
+}
+
+.carousel__block {
+  width: 1160px;
+  height: 470px;
+  display: block;
+  float: left;
+}
+
+.carousel__block__img {
+  display: block;
+}
+
+.carousel__block__title {
+  width: 308px;
+  height: 197px;
+  padding-top: 15px;
+  padding-left: 25px;
+  position: relative;
+  top: -240px;
+  left: 36px;
+  background: url("../img/Rectangle%208%20copy.png") no-repeat;
+  color: $color1;
+  font-family: "Ubuntu Medium";
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.carousel__block__title--yellow {
+  color: $color7;
+}
+
+.buttler {
+  position: relative;
+  left: 45%;
+  top: -30px;
+  width: 59%;
+}
+
+.buttler__type {
+  width: 15px;
+  height: 15px;
+  background: $color1;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.active {
+  width: 9px;
+  height: 9px;
+  position: relative;
+  left: -69px;
+  top: -3px;
+  display: inline-block;
+  background: $color8;
+}
+//*
+
+//**issue block
+.issue {
+  position:relative;
+  height: 320px;
+  margin-top: 50px;
+}
+
+.issue__item {
+  float: left;
+  width: 33%;
+}
+
+.issue__number {
+  float: left;
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 90px;
+  opacity: .2;
+}
+
+.issue__block {
+  width: 67%;
+  float: right;
+}
+
+.issue__block__title::before {
+  width: 32px;
+  height: 32px;
+  display: block;
+  content: '';
+  margin-bottom: 15px;
+  background: url("../img/sprite2.png") no-repeat;
+  background-position-y: 0;
+}
+
+.location::before {
+  background-position-x: 0;
+}
+
+.parametrs::before {
+  background-position-x: -35px;
+}
+
+.truck::before {
+  background-position-x: -70px;
+}
+
+.issue__block__title {
+  margin: 18px 0 27px;
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 13px;
+}
+
+.issue__block__text {
+  width: 100%;
+  color: $color9;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.issue__block__link {
+  margin-top: 22px;
+  display: inline-block;
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.issue__block__link::after {
+  width: 10px;
+  height: 9px;
+  display: inline-block;
+  content: '';
+  margin-left: 5px;
+  background: url('../img/sprite3.png');
+  background-position: 0 0;
+}
+
+.issue__block__link:hover {
+  color: $color4;
+}
+
+.issue__block__link:hover::after {
+  background-position: -11px 0;
+}
+//**
+
+//**service
+.service {
+  height: 500px;
+  background: $color2;
+  font-family: "Ubuntu Medium";
+}
+
+.service__title {
+  color:$color1;
+  font-size: 24px;
+  padding:47px 0 57px 0;
+}
+
+.service__item {
+  float: left;
+  margin-right: 40px;
+}
+
+.service__item:last-child {
+  margin-right: 0;
+}
+
+.service__item--link {
+  display: block;
+  color: $color1;
+  text-decoration: none;
+}
+
+.service__item--link:hover {
+  color: $color7;
+}
+
+.service__item--title {
+  margin-top: 34px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.service__item--img:hover {
+  opacity:0.5;
+  background: url('../img/pic-after.jpg') no-repeat;
+}
+//**
+
+//**info
+.info {
+  width: 100%;
+  height: 545px;
+  background: $color11;
+}
+
+.info__block {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+//**news
+.news {
+  float: left;
+}
+
+.news__title {
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+
+.news__block {
+  height: 150px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.news__date {
+  height: 150px;
+  float: left;
+  margin-right: 32px;
+}
+
+.news__month,
+.news__day {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 15px;
+  left: -10px;
+  font-family: "Ubuntu Medium";
+  z-index: 10;
+}
+
+.news__month {
+  background: $color4;
+  padding: 11px 8px;
+  color: $color1;
+  font-size: 15px;
+}
+
+.news__day {
+  background: $color7;
+  padding: 10px;
+  color: $color2;
+  font-size: 18px;
+}
+
+.news__img {
+  position: relative;
+  top: -80px
+}
+
+.news__box {
+  width: 377px;
+  clear: right;
+  float: right;
+}
+
+.news__box__title {
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.news__box__title:hover {
+  color: $color4;
+}
+
+.news__box__notes {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: $color12;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.news__box__notes--marked {
+  color: $color13;
+  text-decoration: none;
+}
+
+.news__box__text {
+  color: $color9;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+//**
+
+//**banners
+.banner {
+  width: 560px;
+  float: right;
+}
+
+.banner__item {
+  margin: 5px auto;
+}
+
+.banner__toggle {
+  width: 37px;
+  height: 39px;
+  display: inline-block;
+  padding: 8px 12px;
+  background: $color1;
+  border: 1px solid $color14;
+  color: $color2;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.banner__title {
+  width: 523px;
+  height: 39px;
+  display: inline-block;
+  position: absolute;
+  padding: 12px;
+  background: $color1;
+  border: 1px solid $color14;
+  color: $color2;
+  font-family: "Ubuntu Medium";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.banner__active {
+  background: $color7;
+  color: $color1;
+}
+
+.banner__text {
+  width: 560px;
+  height: 164px;
+  display: none;
+  padding-top: 30px;
+  padding-left: 37px;
+  color: $color9;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 20px;
+}
+//**
+
+//**brands
+figure {
+  width: 100%;
+  height: 240px;
+  background: $color1;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand__img {
+  display: inline-block;
+  margin-top: 85px;
+  margin-right: 47px;
+}
+
+.brand__img:last-child {
+  margin-right: 0;
+}
+//**
+
+//** footer
+menu {
+  width: 100%;
+  background: $color2;
+}
+
+//*footer menu
+.menu {
+  width: 1160px;
+  height: 325px;
+  margin: 0 auto;
+  padding-top: 63px;
+}
+
+.menu__item {
+  width: 260px;
+  float: left;
+  margin-right: 40px;
+  color: $color1;
+  font-family: "Ubuntu Medium";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__submenu {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.menu__submenu__item {
+  padding: 10px 0;
+  border-bottom: 1px solid $color5;
+}
+
+.menu__submenu__item:last-child {
+  border-bottom: 0;
+}
+
+.menu__submenu__link {
+  color: $color9;
+  font-family: Arial;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.menu__submenu__link:hover {
+  color: $color4;
+}
+
+//** footer contacts
+footer {
+  background: $color5;
+}
+
+.contacts__list {
+  width: 1160px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.contacts__item {
+  float: left;
+  margin-right: 34px;
+  padding-top: 25px;
+  color: $color9;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
+  padding-top: 30px;
+}
+
+.location::before {
+  content: url('../img/location.png');
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.location a {
+  text-decoration: none;
+  color: $color9;
+}
+
+.phone::before {
+  content: url('../img/iPhone%20potrait.png');
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.email::before {
+  content: url('../img/front%20email.png');
+  display: inline-block;
+  margin-right: 14px;
+}
+//*
