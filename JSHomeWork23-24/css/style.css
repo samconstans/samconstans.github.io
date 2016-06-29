@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 110px auto;
+    width: 400px;
+    padding: 20px 40px;
+    background: #d8e8f6;
+    border-radius: 10px;
+}
+
+.list {
+    padding-left: 0;
+}
+
+.list__item {
+    width: 100%;
+    display: block;
+    float: left;
+    color: #173e3b;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 30px;
+    list-style: none;
+}
+
+.list__item__control {
+    float: right;
+}
+
+.list__item__control__button,
+.item-add__button {
+    float: right;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background: #238ce9;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+.item-add__value {
+    width: 60%;
+    height: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
