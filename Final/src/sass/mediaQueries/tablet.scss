@@ -43,14 +43,15 @@
   }
 
   .about__item__wrapper {
-    padding-top: 211px;
+    top: 43%;
+    padding-top: 0;
     padding-right: 8.5%;
     padding-bottom: 20px;
     padding-left: 8.5%;
   }
 
-  .about__item__num--second {
-    margin-top: 47px;
+  .about__item__num--second{
+    margin-top: 0;
   }
 
   .about__item__title {
@@ -126,6 +127,11 @@
 
   .footer__company {
     margin: 0 15% 0 12%;
+  }
+
+
+  .bx-wrapper .bx-controls-direction a {
+    top: 18%;
   }
 
 }

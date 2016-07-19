@@ -1,6 +1,5 @@
 <section class="ideas">
-    <h1 class="ideas__title">Discover holiday activity
-        ideas</h1>
+    <h1 class="ideas__title">Discover holiday activity ideas</h1>
 
     <script type="text/template" id="container">
         <div class="grid">
@@ -9,9 +8,16 @@
             <% for (var i = 0; i < 10; i++) { %>
             <figure class="grid-item">
                 <img src="<%= hits[i].webformatURL %>" alt="picture" class="ideas__pic__img"/>
-                <figcaption class="ideas__pic__title"><%= hits[i].tags.split(', ')[1] %></figcaption>
+                <figcaption class="ideas__pic__title"><%= hits[i].tags.split(', ')[0] %></figcaption>
             </figure>
             <% } %>
         </div>
     </script>
+</section>
+
+<section class="search">
+    <h1 class="search__title">Discover holiday activity ideas</h1>
+    <p class="search__text">Hi! What are your holiday interests?</p>
+    <input type="search" placeholder="Enter your interests" class="search__field"/>
+    <button class="search__button">Search partners</button>
 </section>
