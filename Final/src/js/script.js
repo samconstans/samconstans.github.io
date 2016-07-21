@@ -18,7 +18,7 @@ $(function () {
         }
 
         function search(page) {
-            $('.ideas').find('div').remove();
+            $('.pictures').find('div').remove();
             var $searchKey = $('.search__field').val();
 
             $.ajax({
@@ -28,7 +28,7 @@ $(function () {
                     var $html = $('#container').html();
                     console.log(data);
                     var $content = tmpl($html, data);
-                    $('.ideas').append($content);
+                    $('.pictures').append($content);
                     grid();
                 },
                 error: function () {
@@ -38,12 +38,11 @@ $(function () {
         }
 
         var randomPage = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
-        // console.log(randomPage);
         search(+randomPage);
 
         $('.search__button').on('click', function (e) {
             e.preventDefault();
-            search('1');
+            search('0');
             $('.search__field').val('');
         })
     }

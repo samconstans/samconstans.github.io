@@ -1,0 +1,66 @@
+.mobile__logo {
+  display: none;
+}
+.mobile__wrapper {
+  display: none;
+}
+.wrapper {
+  margin: $automargin;
+  text-align: center;
+}
+.logo {
+  padding: 50px 0 0 0;
+}
+header {
+  color: $header-text-color;
+  background: $header-background;
+  background-size: cover;
+  text-align: center;
+  font-family: $montserratbold;
+  font-size: $font-header-size;
+}
+.logo__name {
+  font-size: $font-header-size;
+  float: left;
+}
+.login {
+  font-size: $font-header-login-size;
+  float: right;
+  .login__link {
+    text-decoration: none;
+    line-height: $login-link-height;
+    color: $header-text-color;
+    display: inline-block;
+    width: $login-link-width;
+    border: $login-border-inactive;
+    &:hover  {
+      border:  $login-up-border;
+      border-radius: $login-up-border-radius;
+      color: $login-hover-color;
+    }
+  }
+}
+.header__title {
+  margin: $header-title-margin;
+  font-size: $font-header-title-size;
+}
+.header__text{
+  margin: $header-text-margin;
+  font-family: $robotolight;
+  font-size: $font-header-text-size;
+}
+.header__link {
+  text-decoration: none;
+  display: block;
+  font-size: $small-size;
+  border: $login-border-inactive;
+  border-radius: $login-up-border-radius;
+  width: $header-link-width;
+  line-height: $login-link-height;
+  color: $header-text-color;
+  margin: $header-link-margin;
+  background-color: $header-link-background;
+  &:hover {
+    border: $login-up-border;
+  }
+}
