@@ -2,19 +2,23 @@
 
   @import '../desktop';
 
-  .promo__header__connect {
+  .wrapper {
+    width: 98%;
+  }
+
+   .login {
     margin-right: 6.1%;
   }
 
-  .promo__header__title {
+  .mobile__logo {
     margin-left: 6.5%;
   }
 
-  .promo__info__title {
-    margin: 0 18%;
+  .header__title {
+
   }
 
-  .promo__info__text {
+  .header__text {
     margin: 3.8% 15% 1.8%;
   }
 
@@ -77,8 +81,7 @@
 
   .partners__list {
     max-height: 530px;
-    margin-right: 16.5%;
-    margin-left: 17%;
+    margin: 0 16.5%;
   }
 
   .partners__item {
@@ -88,7 +91,7 @@
   }
 
   .partners__item__text {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -104,6 +107,11 @@
 
   .gutter-sizer {
     width: 2.6%;
+  }
+
+  .pictures {
+    width: 98%;
+    margin: 50px auto 97px;
   }
 
   .grid-item {

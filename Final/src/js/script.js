@@ -1,24 +1,15 @@
 $(function () {
-
         $('.bxslider').bxSlider({
             auto: false,
             pager: false,
             autoControls: true
         });
 
-        function grid() {
-            var $grid = $('.grid').imagesLoaded(function () {
-                $grid.masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    gutter: '.gutter-sizer',
-                    percentPosition: true
-                });
-            });
-        }
-
         function search(page) {
-            $('.pictures').find('div').remove();
+            var $pictures = $('.pictures'),
+                $grid;
+            $pictures.find('div').remove();
+
             var $searchKey = $('.search__field').val();
 
             $.ajax({
@@ -26,13 +17,24 @@ $(function () {
                 dataType: 'jsonp',
                 success: function (data) {
                     var $html = $('#container').html();
-                    console.log(data);
                     var $content = tmpl($html, data);
-                    $('.pictures').append($content);
-                    grid();
+                    $pictures.append($content);
+
+                    $grid = $('.grid').masonry({
+                        itemSelector: '.grid-item',
+                        columnWidth: '.grid-sizer',
+                        gutter: '.gutter-sizer',
+                        percentPosition: true
+                    });
+
+                    // layout Masonry after each image loads
+                    $grid.imagesLoaded().progress( function() {
+                        $grid.masonry('layout');
+                    });
                 },
                 error: function () {
-                    alert('Error!');
+                    $pictures.remove();
+                    console.log('Pixabay is now offlane');
                 }
             });
         }
@@ -40,10 +42,20 @@ $(function () {
         var randomPage = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
         search(+randomPage);
 
-        $('.search__button').on('click', function (e) {
-            e.preventDefault();
+        function refreshGrid() {
             search('0');
             $('.search__field').val('');
-        })
+        }
+
+        $('.search__button').on('click', function (e) {
+            e.preventDefault();
+            refreshGrid();
+        });
+
+        $('.search__field').keyup(function(e){
+            if(e.keyCode == 13) {
+                refreshGrid();
+            }
+        });
     }
 );

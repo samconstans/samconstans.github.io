@@ -102,8 +102,9 @@
   cursor: pointer;
   font-size: 14px;
   &:hover {
-    border-color: $color5;
-    color: $color5;
+    border-color: $header-text-color;
+    color: $partners-link-text-hover;
+    background: $color3;
   }
 }
 

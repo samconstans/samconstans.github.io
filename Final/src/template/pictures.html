@@ -8,6 +8,7 @@
             <% for (var i = 0; i < 10; i++) { %>
             <figure class="grid-item">
                 <img src="<%= hits[i].webformatURL %>" alt="picture" class="ideas__pic__img"/>
+                <div style="background-image: url('<%= hits[i].webformatURL %>');" class="ideas__pic__img"></div>
                 <figcaption class="ideas__pic__title"><%= hits[i].tags.split(', ')[0] %></figcaption>
             </figure>
             <% } %>

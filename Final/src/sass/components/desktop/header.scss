@@ -5,62 +5,65 @@
   display: none;
 }
 .wrapper {
-  margin: $automargin;
+  margin: 0 auto;
   text-align: center;
+  width: 940px;
 }
+
 .logo {
   padding: 50px 0 0 0;
 }
 header {
   color: $header-text-color;
-  background: $header-background;
+  background: url("../img/header_background.jpg") no-repeat top center, #000;
   background-size: cover;
   text-align: center;
-  font-family: $montserratbold;
-  font-size: $font-header-size;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 20px;
+  height: 695px;
 }
+
 .logo__name {
-  font-size: $font-header-size;
+  font-size: 20px;
   float: left;
 }
 .login {
-  font-size: $font-header-login-size;
+  font-size: 14px;
   float: right;
   .login__link {
     text-decoration: none;
-    line-height: $login-link-height;
+    line-height: 35px;
     color: $header-text-color;
     display: inline-block;
-    width: $login-link-width;
-    border: $login-border-inactive;
+    width: 84px;
+    border: 2px solid transparent;
     &:hover  {
-      border:  $login-up-border;
-      border-radius: $login-up-border-radius;
-      color: $login-hover-color;
+      border:  2px solid #FFF;
+      border-radius: 20px;
     }
   }
 }
 .header__title {
-  margin: $header-title-margin;
-  font-size: $font-header-title-size;
+  margin: 155px 0 0 0;
+  font-size: 52px;
 }
 .header__text{
-  margin: $header-text-margin;
-  font-family: $robotolight;
-  font-size: $font-header-text-size;
+  margin: 45px 0 40px 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 24px;
 }
 .header__link {
   text-decoration: none;
   display: block;
-  font-size: $small-size;
-  border: $login-border-inactive;
-  border-radius: $login-up-border-radius;
-  width: $header-link-width;
-  line-height: $login-link-height;
+  font-size: 14px;
+  border-radius: 20px;
+  width: 225px;
+  line-height: 35px;
   color: $header-text-color;
-  margin: $header-link-margin;
+  margin: 40px auto;
   background-color: $header-link-background;
+  border: 2px solid transparent;
   &:hover {
-    border: $login-up-border;
+    border: 2px solid #FFF;
   }
 }
