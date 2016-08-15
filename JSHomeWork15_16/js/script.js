@@ -20,7 +20,7 @@ $(function() {
 			var self = this;
 
 			var ajaxRequest = $.ajax({
-		  		url: "https://pixabay.com/api/?username=mjweaver01&key=2622948-ebcd3044eca820a8a712059c2&lang&q=" + request + "&image_type=photo",
+		  		url: "https://pixabay.com/api/?key=2625721-e3ff5ebd965ddc75924869c3f&q=" + request + "&image_type=photo",
 		  		success: function(response) {
 					self.parseResponse(response);
 		  		},
