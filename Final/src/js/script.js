@@ -20,16 +20,27 @@ $(function () {
                     var $content = tmpl($html, data);
                     $pictures.append($content);
 
-                    $grid = $('.grid').masonry({
-                        itemSelector: '.grid-item',
-                        columnWidth: '.grid-sizer',
-                        gutter: '.gutter-sizer',
-                        percentPosition: true
-                    });
+                    // $grid = $('.grid').masonry({
+                    //     itemSelector: '.grid-item',
+                    //     columnWidth: '.grid-sizer',
+                    //     gutter: '.gutter-sizer',
+                    //     percentPosition: true
+                    // });
 
                     // layout Masonry after each image loads
-                    $grid.imagesLoaded().progress( function() {
-                        $grid.masonry('layout');
+                    // $grid.imagesLoaded().progress( function() {
+                    //     $grid.masonry('layout');
+                    // });
+
+
+                    var $grid = $('.grid');
+                    $grid.imagesLoaded( function(){
+                        $grid.masonry({
+                            itemSelector : '.grid-item',
+                            columnWidth: '.grid-sizer',
+                            gutter: '.gutter-sizer',
+                            percentPosition: true
+                        });
                     });
                 },
                 error: function () {
