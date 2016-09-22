@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registr Stroybuk</title>
+	<link rel="stylesheet" href="css/reset.css">	
+	<link  rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,800' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+</head>
+<body>	
+	<content>
+		<div class="registr">			
+			<form action="подтверждение.html" method="post" name="signup" id="signup">
+			<div class="registr_box1">
+				<div>
+					<label for="phone" class="label">Номер телефона</label>
+					<input name="phone" type="text" id="phone" class="required">
+				</div>
+			</div>
+			<div class="registr_box2">
+			<h2>Данные для входа в систему</h2>	
+				<div>								
+					<label for="email" class="label">Электронный адрес</label>
+					<input name="email" type="text" id="email">
+				</div>
+				<div>
+					<label for="password" class="label">Пароль</label>
+					<input name="password" type="password" id="password">
+				</div>
+				<div>
+					<label for="confirm_password" class="label">Подтвердите пароль</label>
+					<input name="confirm_password" type="password" id="confirm_password">
+				</div>
+			</div>		
+			<div class="registr_box3">
+				<div>
+					<input type="submit" name="submit" id="submit" value="Загеристироватья">
+					<span>Нажимая кнопку <q>Зарегистрироваться</q>, вы соглашаетесь с нашими <a href="#">Условиями пользовательского сервиса</a>, а также с передачей и обработкой ваших данных, включая <a href="#">использование файлов <q>cookie</q>.</a></span>
+				</div>
+			</div>
+			</form>
+		</div>		
+	</content>	
+	<script src="js/script.js"></script>
+</body>
+</html>

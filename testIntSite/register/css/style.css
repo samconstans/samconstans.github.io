@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'League_Gothic Regular';
+    src: url('..//fonts/league-gothic_allfont.ru-webfont.eot');
+    src: url('..//fonts/league-gothic_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('..//fonts/league-gothic_allfont.ru-webfont.woff2') format('woff2'),
+         url('..//fonts/league-gothic_allfont.ru-webfont.woff') format('woff'),
+         url('..//fonts/league-gothic_allfont.ru-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;	
+	font-family:'League_Gothic Regular', Arial, Helvetica, sans-serif;
+}
+
+content,
+menu, 
+nav, 
+section { 
+    display: block;
+}
+
+content {
+	position: absolute;	
+	top: 0;
+	width: 100%;	
+	height: 502px;
+    margin: 0 auto;
+    background: #f5f5f5;
+}
+
+form {
+	height: 420px;
+}
+.registr {
+	width: 80%;	
+	height: 420px;
+	background: #fff;
+	margin: 3% 10%;
+	border:1px solid #eaeaea;	
+}
+
+/*#signup .indent label.error {
+  margin-left: 0;
+}
+#signup label.error {
+  font-size: 0.8em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-left: 215px;
+}
+#signup  input.error, #signup select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+form#order .label, 
+*/
+
+.registr_box1,
+.registr_box2 {	
+	border-bottom: 1px solid #eaeaea;
+}
+
+.registr_box1 div {
+	position: relative;
+	height: 90px;
+	width: 515px;	
+}
+
+form#signup .label {
+    display: block;
+    clear: left;
+    float: left;   
+    text-align: left;
+    padding: 8px 19px;    
+    border: 1px solid #eaeaea;
+	background: #f8f8f8;
+	margin:20px 0 0 33px;
+	color: #54595c;	
+	font-size: 15px;
+}
+
+
+input {
+	float:left;
+    font-size: 30px;
+    margin-top: 20px;    
+    border: 1px solid #eaeaea;
+    border-left: none;
+}
+
+h2 {
+	color: #15b284;
+	text-align: left;
+	padding: 8px 19px 7px;	
+}
+
+.registr_box2,
+.registr_box3 {
+	clear: both;
+	position: relative;	
+}
+
+.registr_box2 {	
+	height: 242px;	
+}
+
+.registr_box2 div {			
+	width: 542px;
+}
+
+input[type="submit"], button {
+	display: block;
+    cursor: pointer;
+    width: 257px;
+	text-transform: uppercase;
+	margin: 20px 0 20px 33px;
+	color: #686868;
+	background:#fff;
+	font-size: 17px;
+	border: 1px solid #05d699;
+	height: 33px;
+} 
+
+span {
+	display: block;	
+	float: right;
+	width: 760px;
+	color: #54595c;
+	font-size:15px;
+	margin: 20px 0 20px;
+}
+
+q {
+quotes: "«" "»" "‹" "›";
+}
+
+span a {
+	text-decoration: none;
+	color: #15b284;
+}
