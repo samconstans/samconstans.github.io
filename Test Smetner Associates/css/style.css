@@ -101,6 +101,11 @@ input[type=time] {
 	padding-top: 33px;
 }
 
+.comments textarea {
+	width: 1003px;
+	height: 228px;
+}
+
 input[type=submit] {
 	display: block;
 	clear: both;	
