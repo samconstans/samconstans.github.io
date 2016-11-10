@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>In Store Pickup</title>	
+	<link  rel="stylesheet" href="css/style.css">	
+	<script type="text/javascript" src="script/script.js"></script> 
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<h1><span class="circle">1</span>in store pickup</h1>		
+	</header>
+	<fieldset>
+		<form action="подтверждение.html" method="post" name="signup" id="signup">		
+			<div class="labelBlock">In store pick up items will be processed come in lorem ipsum. The pickup and item time must be two days from today after 2pm.</div>
+			<div class="indent">
+				<input  type="radio" name="spam" id="yes" value="yes" class="required">
+				<label for="yes">2099 Peachtree Rd NE. Atlanta GA 30309</label>				
+				<input type="radio" name="spam" id="choice" value="choice">
+				<label for="choice">Choose a Different Store</label>
+			</div>
+			<div class="group--date tcal">
+				<label for="calendar" class="label tcal">Pickup Date</label>
+				<input type="text" name="date" class="tcal" value=""/>
+			</div>
+			<div class="group--time">
+				<label for="time" class="label">Pickup Time</label>
+				<input name="time" type="time" id="time">	
+			</div>								
+			<div class="group--name">
+				<label for="name" class="label">Your name</label>
+				<input name="name" type="text" id="name" size="36" placeholder="First Name">
+				<input name="name" type="text" id="name" size="36" placeholder="Last Name">
+			</div>
+			<div class="group">
+				<label for="email" class="label">email address</label>
+				<input name="email" type="email" id="email" size="36" placeholder="Ex.joe@joe.com">
+			</div>
+			<div class="group">
+				<label for="phone" class="label">Phone number</label>
+				<input name="phone" type="phone" id="phone" size="36" placeholder="Ex.555-555">
+			</div>			
+			<div class="comments">
+				<label for="comments" class="label">Special requests and additional comments</label>
+				<textarea name="comments" cols="122" rows="15" id="comments"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Continue">
+			</div>		
+		</form>
+	</fieldset>	
+</div>
+</body>
+</html>
