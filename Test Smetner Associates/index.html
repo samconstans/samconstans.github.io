@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>In Store Pickup</title>	
-	<link  rel="stylesheet" href="css/style.css">	
-	<script type="text/javascript" src="script/script.js"></script> 
+	<link  rel="stylesheet" href="css/style.css">
+	<link  rel="stylesheet" href="css/tcal.css">	
+	<script type="text/javascript" src="/script/tcal.js"></script> 
 </head>
 <body>
 <div class="wrap">
@@ -20,13 +21,18 @@
 				<input type="radio" name="spam" id="choice" value="choice">
 				<label for="choice">Choose a Different Store</label>
 			</div>
-			<div class="group--date tcal">
-				<label for="calendar" class="label tcal">Pickup Date</label>
-				<input type="text" name="date" class="tcal" value=""/>
+			<div class="group--calendar">
+				<label for="calendar" class="label">Pickup Date</label>
+				<input type="date" name="calendar" id="calendar" class="date required" value="14/11/2016" max="04/06/2017" min="01/01/2010">
 			</div>
 			<div class="group--time">
 				<label for="time" class="label">Pickup Time</label>
-				<input name="time" type="time" id="time">	
+				<select name="time" id="time" required title="Select a Time">
+					<option value="">Select a Time</option>
+					<option value="">0</option>
+					<option value="+1">+1</option>
+					<option value="+2">+2</option>
+				</select>
 			</div>								
 			<div class="group--name">
 				<label for="name" class="label">Your name</label>
