@@ -1,0 +1,209 @@
+@media (min-width: 768px) and (max-width: 959px) {
+  .wrap {
+    width: 768px;
+	margin: 0 auto;
+  }
+	/* FORM */
+	.dialog {
+		top: 0;
+		left: 60px;
+		height: 55px;
+		width: 55px;
+	}
+
+	.show-btn {
+		margin: 0;
+		padding: 0;
+		width: 10px;
+	}
+
+	.envelope {
+		top: -19px;
+		left: -60px;
+		width: 32px;
+		height: 55px;
+	}
+
+	input[type="text"] {
+		width: 118px;
+		height: 55px;
+	}
+
+	/* FOOTER */
+	.networks__link {
+		display: block;
+		float: left;
+		width: 14%;
+		list-style: none;
+		text-align: center;
+	}
+	.networks__link span:hover {
+		color: #4c4c4c;
+	}
+
+	.networks__link a {
+		font-size: 13px;
+	}
+
+	.footer--menu {
+		margin: 0 auto;
+	}
+
+	.menu--item:first-child {
+		margin-left: 15%;
+	}
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+.wrap {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-left: -100px;
+}
+
+.nav--item {
+  padding-left: 0;
+}
+
+/* FORM */
+.dialog {
+  top: -62px;
+  left: 527px;
+  height: 55px;
+  width: 55px;
+}
+.envelope {
+  top: -19px;
+  left: -92px;
+  width: 138px;
+  height: 55px;
+}
+
+input[type="text"] {
+  width: 138px;
+  height: 55px;
+  background: #eee;
+  border: none;
+}
+
+
+section {
+	margin-top: -68px;
+}
+
+.networks__link span {
+  display: none;
+}
+
+.footer--menu {
+  padding: 20px 0 30px 45px;
+}
+
+.menu--item:first-child {
+  margin-left: 0;
+}
+
+.menu--item:last-child {
+margin-left: 25%;
+}
+
+.main-content {
+  padding: 50px 0 50px 0;
+}
+
+.footer--copy {
+	padding: 25px 0 25px 0;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+.wrap {
+	width: 320px;
+}
+
+.logo {
+  padding-bottom:10px;
+}
+nav {
+  display: none;
+}
+
+.nav--select {
+  display: block;
+  padding: 16px 0 0 58px;
+}
+
+	/* FORM */
+.dialog {
+  position: relative;
+  top: -34px;
+  left: 275px;
+  background: none;
+}
+
+.show-btn img {
+  width: 15px;
+}
+
+.envelope {
+  top: -3px;
+  left: 75px;
+  width: 72px;
+  height: 0;
+  background: none;
+}
+
+input[type="text"] {
+  width: 72px;
+  height: 55px;
+  background: #eee;
+  font-size: 10px;
+}
+
+.text-typing {
+  font-size: 50px;
+}
+
+.bunner {
+  display: none;
+}
+
+.bunner--mobile {
+  display:block;
+  margin-top: 15px;
+}
+
+.networks__link span {
+  display: none;
+}
+
+.menu {
+  padding: 40px 0 50px 0px;
+}
+
+.menu--item a {
+  font-size: 10px;
+}
+
+.menu--item:first-child {
+  margin-left: 0;
+}
+
+.menu--item {
+  padding-left: 10px;
+}
+
+.footer--copy {
+  clear: both;
+  color: #ffffff;
+  padding: 25px 0 25px 0;
+}
+
+}

@@ -1,0 +1,49 @@
+.main {
+  background: #f3f3f3 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  clear: both;
+  margin-top: -13px;
+  margin-left: auto;
+}
+
+.dialog--ie {
+  position: relative;
+  top: -9px;
+  left: 816px;
+  background: #eeeeee;
+  border: none;
+  height: 55px;
+  width: 55px;
+}
+
+.link--tw {
+  float:left;
+  background: url('../img/icon.png');
+  background-position: -27px 16px;
+  width: 24px;
+  height: 20px;
+  margin-right: -20px;
+}
+
+.link--tw:hover {
+   background-position: -27px 0px;
+}
+
+.link--dr {
+  display: block;
+  float:left;
+  background: url('../img/icon.png');
+  background-position: -27px 16px;
+  width: 24px;
+  height: 20px;
+  margin-right: -20px;
+}
+
+.link--dr:hover {
+   background-position: -27px 0px;
+}
+
