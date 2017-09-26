@@ -1,0 +1,138 @@
+@import '../../theme/palette';
+
+.home {
+  display: flex;
+  background: url('../../theme/assets/panorama.jpg') center 100%;
+  flex-direction: row;
+  background-size: cover;
+  transition: 0.5s ease all;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  &.blurred {
+    filter: blur(2px);
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 100px 50px 100px 10px;
+    text-align: center;
+    border: 5px solid $paletteColor5;
+  }
+
+  .blockText {
+    padding-left: 25px;
+    width: 60%;
+
+    h1 {
+      font-family: 'roboto medium', sans-serif;
+      letter-spacing: 0.15em;
+      font-size: 45px;
+      color: $paletteColor2;
+      text-align: center;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      margin-top: 160px;
+
+      span {
+        color: $paletteColor5;
+        text-transform: capitalize;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      width: 650px;
+      font-family: 'roboto medium', Helvetica;
+      color: $paletteColor2;
+      font-size: 25px;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .home {
+    min-width: 768px;
+
+    img {
+      margin: 25px 50px 25px 10px;
+    }
+
+    .blockText {
+      width: 55%;
+
+      h1 {
+        font-size: 40px;
+        margin: 48px 10px 28px 0;
+      }
+
+      h2 {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .home {
+    min-width: 480px;
+
+    img {
+      height: auto;
+      width: 30%;
+      margin: 30px 25px 30px 25px;
+
+    }
+
+    .blockText {
+      width: 52%;
+
+      h1 {
+        font-size: 25px;
+        margin-top: 123px;
+      }
+
+      h2 {
+        font-size: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .home {
+    min-width: 320px;
+
+    img {
+      width: 113px;
+      height: 113px;
+      margin: 62px 0 16px 5px;
+    }
+
+    .blockText {
+      width: 59%;
+      margin-top: 70px;
+      padding-left: 0;
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h2 {
+        font-size: 15px;
+        width: 94%;
+        padding-left: 5px;
+        margin-top: 8px;
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Test1 CosmoWeb</title>		
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="script/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="script/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="script/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="script/jquery.fancybox-thumbs.js"></script>
+	<script src="https://use.fontawesome.com/a6db2e41f1.js"></script>
+	<script type="text/javascript" src="script/js.js"></script>
+</head>
+<body>
+	<header>
+	<!--[if lte IE 9]><div class="header"><![endif]-->
+		<div class="wrap">
+			<a href="#"><img class="logo" src="image/LogoHeader.png"></a>
+			<nav> 
+				<ul class="header__menu"> 
+					<li><a href="#">главная</a></li>
+					<li><a href="#">партнеры и акции</a></li>
+					<li><a href="#">промокоды</a></li>
+					<li><a href="#">новости</a></li>
+					<li><a href="#">держателям карт</a></li>
+				</ul>
+			</nav>
+			<div class="CallBack">				
+				<i class="fa fa-mobile white" aria-hidden="true"></i>				
+				<span>+7 (500) 500 50 50</span>
+				<a class="show-btn" rel="envelope" href="">перезвоните мне</a>
+				<div class="envelope" id="envelope"> 										
+					<form method="post" action=""> 
+						<label for="name" class="control-label">Введите ваше имя:</label>
+						<input type="text" name="sender_name" class="your-name">
+						<label for="name" class="control-label">Введите номер вашего телефона:</label>
+						<input type="text" name="sender_phone" class="your-phone">
+						<input type="submit" name="send" value="Отправить" class="send">
+					</form>
+				</div>				
+			</div>
+		</div>		
+		<div class="wrap">
+			<div class="header--content">
+				<h1>лучшие возможности твоего города в<br> одной карте</h1>				
+				<p>Получайте до 30% скидки в сотнях магазинов и заведенийВашег огорода с универсальной картойскидок о5рекомендует</p>
+				<div class="dropdown">
+					<ul class="header__dropdown">
+						<li><a href="#">Выберите город</a>
+							<ul class="dropdown--submenu">
+								<li><a href="#">Астрахань</a></li>
+								<li><a href="#">Бирюково</a></li>
+								<li><a href="#">Владивосток</a></li>
+								<li><a href="#">Москва</a></li>
+								<li><a href="#">Магадан</a></li>
+								<li><a href="#">Магас</a></li>
+								<li><a href="#">Магнитогорск</a></li>
+								<li><a href="#">Майкоп</a></li>
+								<li><a href="#">Макаров</a></li>
+								<li><a href="#">Макушино</a></li>
+								<li><a href="#">Малая Вишера</a></li>
+								<li><a href="#">Малгобек</a></li>
+							</ul>
+						</li>				
+					</ul>
+				</div>
+			</div>
+			<div class="header--hand"> 
+				<a href="#"><img src="image/header--hand.png"></a>
+			</div>
+		</div>
+		<div class="wrap"> 
+		</div>
+	<!--[if IE 9]></div><![endif]-->	
+	</header>
+	<section>
+	<!--[if lte IE 9]><div class="section"><![endif]-->
+		
+			<h2>как это <span class="h2mark--red">работает</span></h2>
+			
+				<iframe width="480" height="304" src="https://www.youtube.com/embed/Y1naqY-WdoQ" frameborder="0" allowfullscreen></iframe>
+			
+			<!--<video width=320 height=240 autoplay controls Foster=’poster. jpg’> <source src="video. ogv" type=ideo/ogg>
+
+	        <source src="ideo. mp4" type=ideo/mp4>-->
+     	
+	<!--[if IE 9></div><![endif]-->		
+	</section>
+	<article> 
+	<!--[if lte IE 9]><div class="acricle"><![endif]-->
+		<div class="wrap">
+			<div class="article__cap"> 
+				<h2>еще нет карты о5рекомендует?</h2><br>
+				<h3>Оставь заявку и получи карту в течение 24 часов</h3><br>
+				<p>Единоразовый платёж за получение карты - <span class="price--pink">1599 руб.</span></p><br>
+				<p>С промокодом - <span class="price--green">999 руб.</span></p><br>
+			</div>
+			<div class="order--card">
+				<div class="card__header">
+					<h2><span class="header--first">заказать</span> персональную карту о5рекомендует</h2>
+					<img src="../image/form-arrow.png">
+				</div>
+				<div class="card__gallery" id="gallery">
+					<div id="panel" class="panel">
+						<img id="largeimage" class="largeimage" src="image/ChooseCard-1-large.png"> 
+					</div>		
+					<div id="thumbs" class="thumbs">			
+						<span>Выберите дизайн карты:</span>					
+						<a href="image/ChooseCard-1-large.png" class="fancybox" rel="group"><img src="image/ChooseCard-1.png" wigth="55" height="35" alt="purple"></a>
+						<a href="image/ChooseCard-2-large.png" class="fancybox" rel="group"><img src="image/ChooseCard-2.png" wigth="55" height="35" alt="blue"></a>
+						<a href="image/ChooseCard-3-large.png" class="fancybox" rel="group"><img src="image/ChooseCard-3.png" wigth="55" height="35" alt="orange"></a>
+					</div>
+				</div>				
+				<form class="contact_form" action="contact-form.php" method="post" name="signup" id="signup">
+					<div>
+						<label for="name"><div class="label"></div></label>	
+						<input type="text" name="name" placeholder="Имя" required />
+					</div>
+					<div>
+						<label for="lastname"><div class="label"></div></label>
+						<input type="text" name="lastname" placeholder="Фамилия" required />
+					</div>
+					<div>
+						<label for="tel"><div class="label tel"></div></label>
+						<input type="tel" name="tel" placeholder="Введите номер телефона" required />
+					</div>
+					<div class="views">
+						<label><input type="radio" name="views" value="men">Муж.</label>
+						<label><input type="radio" name="views" value="female">Жен.</label>
+					</div>
+					<div>
+						<label for="date-bd"><div class="label date-bd">Дата рождения</div></label>
+						<input type="date" name="date-bd" id="date-bd" class="date required" placeholder="Введите дату своего рождения в формате:01.19.2000" required />
+					</div>
+					<div>
+						<label for="promo"><div class="label promo"></div></label>
+						<input type="text" name="promo" placeholder="Промокод" required />
+					</div>
+					<div class="payment">
+						<label for="payMale" class="label"><div class="card"></div></label>
+						<select name="payMale" id="payMale" class="required" title="Выберите способ оплаты:">
+							<option value="">Выберите способ оплаты:</option>
+							<option value="earth">Наличными</option>
+							<option value="mars">Банковский перевод</option>
+							<option value="mars">WebMoney</option>
+							<option value="alpha centauri">Оплата картой Visa</option>
+							<option value="alpha centauri">Оплата картой MasterCard</option>
+							<option value="alpha centauri">Другой способ</option>
+						</select>					
+					</div>
+					<div>						
+						<input type="submit" name="enter" class="order-card" value="хочу карту о5рекомендует!" />
+					</div>				
+				</form>
+				<div class="card__footer"> 
+					<span>Акция: 1+1=3</span>
+					<h4>Приобретая 2 карты получайте третью в подарок!*</h4>
+					<p>*Акция не ограничена во времени и действует на постоянной основе</p>
+				</div>
+			</div>
+		</div>
+	<!--[if IE 9]></div><![endif]-->
+	</article>
+	<footer>
+	 <!--[if lte IE 9]><div class="footer"><![endif]-->
+	 	<div class="footer--card"> 
+	 		<img class="footer--card" src="image/cards-bg.png">
+	 	</div>
+	 <!--[if IE 9]></div><![endif]-->
+	</footer>
+</body>
+</html>

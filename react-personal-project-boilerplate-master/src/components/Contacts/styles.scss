@@ -1,0 +1,57 @@
+@import '../../theme/palette';
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px;
+  left:0;
+  width: 100%;
+  background: $paletteColor7;
+  font-family: 'roboto medium', Helvetica;
+
+  a {
+    display: block;
+    width: 300px;
+    height: 35px;
+    color: $paletteColor2;
+    text-align: center;
+    background: $paletteColor5;
+    outline: none;
+    text-decoration: none;
+    margin: 20px auto;
+    padding-top: 13px;
+    border-radius: 5px;
+
+    &:hover {
+      outline: none;
+      background: $paletteColor4;
+      -webkit-box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      -moz-box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      transition-duration: .2s;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .contacts {
+    a {
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    height: 100%px;
+
+    a {
+      margin: 15px auto;
+      padding-top: 15px;
+    }
+  }
+}
